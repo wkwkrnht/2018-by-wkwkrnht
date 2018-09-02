@@ -1,0 +1,23 @@
+{
+    "name": "2018-by-wkwkrnht",
+    "version": "0.0.1",
+    "description": "Wordpress theme sample site",
+    "scripts": {
+        "start": "gulp build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wkwkrnht/2018-by-wkwkrnht.git"
+    },
+    "author": "wkwkrnht",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/wkwkrnht/2018-by-wkwkrnht/issues"
+    },
+    "homepage": "https://github.com/wkwkrnht/2018-by-wkwkrnht#readme",
+    "dependencies": {
+        "gulp": "^3.9.1",
+        "gulp-pug": "^4.0.1",
+        "gulp-sass": "^4.0.1"
+    }
+}
