@@ -1,0 +1,122 @@
+doctype html
+html amp=''
+    head
+        meta charset='utf-8'
+        script async='' src='https://cdn.ampproject.org/v0.js'
+        meta name='viewport' content='width=device-width,initial-scale=1'
+        title RT狂の思考ログ
+        script type='application/ld+json'
+        |    {
+        |        "@context": "http://schema.org",
+        |        "@type": "NewsArticle",
+        |        "headline": "Open-source framework for publishing content",
+        |        "datePublished": "2018-12-01T00:00:00Z",
+        |        "image": [
+        |            "logo.png"
+        |        ]
+        |    }
+        style amp-boilerplate=''
+            body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+        noscript
+            style amp-boilerplate=''
+                body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+        style amp-custom=''
+            = File.read('./style/normalize.css')
+            = File.read('./style/page.css')
+        body
+            article
+                header.article-header
+                    div.logo
+                        amp-img src='./logo.png' alt='logo'
+                    h1 デザインレビュー用ページ
+                main.article-main
+                    div.info-box data-type='ｉ'
+                    div.info-box data-type='?'
+                    h2 標準要素の確認
+                    p
+                        a href='http://wkwkrnht.wp.xdomain.jp' title='RT狂の思考ログ' target='_blank' rel='noopener' RT狂の思考ログ
+                        q 松島や ああ松島や 松島や
+                        blockquote
+                            |
+                            |
+                            |
+                            |
+                            |
+                        pre
+                            code
+                            |    <?php
+                            |        function make_embed_element(url){
+                            |            switch(url){
+                            |                case 'youtube':
+                            |                    break;
+                            |                case 'vine':
+                            |                    break;
+                            |                case 'instagram':
+                            |                    break;
+                            |                case 'facebook':
+                            |                    break;
+                            |                case 'twitter':
+                            |                    break;
+                            |                default:
+                            |            }
+                            |            return $html;
+                            |        }
+                            |    ?>
+                        ul
+                            li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            li 1
+                        ol
+                            li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            li 2
+                        table
+                            thead
+                                tr
+                                    th name
+                                    th Table Data
+                                    th Table Data
+                            tbody
+                                tr
+                                    td name
+                                    td Table Data
+                                    td Table Data
+                                tr
+                                    td name
+                                    td Table Data
+                                    td Table Data
+                                tr
+                                    td name
+                                    td Table Data
+                                    td Table Data
+                            tfoot
+                                tr
+                                    td name
+                                    td Table Data
+                                    td Table Data
+                    aside class='cutin-box blue'
+                        h3 コラム
+                        p.cutin-box-inner
+                    h3 独自装飾の確認
+                    p
+                        span.marker
+                        a href='http://wkwkrnht.wp.xdomain.jp' title='RT狂の思考ログ' tabindex='0' target='_blank' rel='noopener' class='button green' GO
+                        span class='button red' DON'T
+                    div
+                        amp-img src='../img/test.png'
+                    h4 箱系
+                    div class='simple-box black'
+                    div class='cutin-box orange' 白抜きボックス
+                        div.cutin-box-inner
+                    div.search-form
+                        div.search-form CeBIT 2019
+                            div.search-btn
+                                span class='fa fa-search fa-fw' 検索
+                    h5 埋め込み系
+                    p
+                        blockquote cite='http://wkwkrnht.wp.xdomain.jp'
+                            div.eyecatch
+                                amp-img src='http://wkwkrnht.wp.xdomain.jp/wp-content/uploads/2016/08/rt-240x240.png'
+                            a.info href='http://wkwkrnht.wp.xdomain.jp' target='_blank' rel='noopener' tabindex='0' title='RT狂の思考ログ'
+                                h6.title RT狂の思考ログ
+                                p.description wkwkrnhtが持つ、長文向けの一応のメイン媒体。
+                    h6 some
+                footer.article-footer

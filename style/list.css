@@ -1,0 +1,20 @@
+:root{
+    --card-size: 30vmax;
+    --vertical-base: 2vh;
+}
+
+.article-card {
+    box-shadow: 0 0 3vmin rgba(0, 0, 0, .2);
+    height: var(--card-size);
+    margin: calc( var(--vertical-base) * 2 ) auto;
+    position: relative;
+    width: var(--card-size);
+}
+
+.article-card .title,
+.article-card .eyecatch{
+    bottom: 0;
+    box-sizing: border-box;
+    position: absolute;
+    width: inherit;
+}

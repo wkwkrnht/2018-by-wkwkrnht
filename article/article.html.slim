@@ -22,19 +22,12 @@ html amp=''
                 body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
         style amp-custom=''
             = File.read('./style/normalize.css')
-            = File.read('./style/list.css')
+            = File.read('./style/page.css')
         body
-            header
-                div.logo
-                    amp-img src='./logo.png' alt='logo'
-                h1 RT狂の思考ログ
-            main
-                - 10.times do
-                    a.article-card href='./article/test.html'
-                        div.eyecatch
-                            amp-img src='./img/eyecatch01.png' alt='eyecatch'
-                        h2.title デザインレビューページ
-                    a.article-card href='./article/article.html'
-                        div.eyecatch
-                            amp-img src='./img/eyecatch01.png' alt='eyecatch'
-                        h2.title いつもの普通のブログ記事
+            article
+                header.article-header
+                    div.logo
+                        amp-img src='./logo.png' alt='logo'
+                    h1 【いつものブログ記事】
+                main.article-main
+                footer.article-footer
