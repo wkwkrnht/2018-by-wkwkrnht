@@ -3,7 +3,24 @@
     --vertical-base: 2vh;
 }
 
+header {
+    height: 15%;
+    margin: 0 0 calc(var(--vertical-base) * 3) 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.article-list {
+    align-content: space-around;
+    align-items: baseline;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
 .article-card {
+    background-color: #fff;
     box-shadow: 0 0 3vmin rgba(0, 0, 0, .2);
     height: var(--card-size);
     margin: calc( var(--vertical-base) * 2 ) auto;
@@ -17,4 +34,8 @@
     box-sizing: border-box;
     position: absolute;
     width: inherit;
+}
+
+.article-card .title {
+    background-color: rgba(0, 0, 0, .4);
 }
