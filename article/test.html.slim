@@ -33,33 +33,36 @@ html amp=''
                     h2 標準要素の確認
                     p
                         a href='http://wkwkrnht.wp.xdomain.jp' title='RT狂の思考ログ' target='_blank' rel='noopener' RT狂の思考ログ
+                        br
                         q 松島や ああ松島や 松島や
+                        br
                         blockquote
                             |
                             |
                             |
                             |
                             |
+                        br
                         pre
                             code
-                            |    <?php
-                            |        function make_embed_element(url){
-                            |            switch(url){
-                            |                case 'youtube':
-                            |                    break;
-                            |                case 'vine':
-                            |                    break;
-                            |                case 'instagram':
-                            |                    break;
-                            |                case 'facebook':
-                            |                    break;
-                            |                case 'twitter':
-                            |                    break;
-                            |                default:
-                            |            }
-                            |            return $html;
-                            |        }
-                            |    ?>
+                                |    <?php
+                                |        function make_embed_element(url){
+                                |            switch(url){
+                                |                case 'youtube':
+                                |                    break;
+                                |                case 'vine':
+                                |                    break;
+                                |                case 'instagram':
+                                |                    break;
+                                |                case 'facebook':
+                                |                    break;
+                                |                case 'twitter':
+                                |                    break;
+                                |                default:
+                                |            }
+                                |            return $html;
+                                |        }
+                                |    ?>
                         ul
                             li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             li 1
@@ -95,19 +98,20 @@ html amp=''
                         p.cutin-box-inner
                     h3 独自装飾の確認
                     p
-                        span.marker
+                        span.marker This is marked.
                         a href='http://wkwkrnht.wp.xdomain.jp' title='RT狂の思考ログ' tabindex='0' target='_blank' rel='noopener' class='button green' GO
                         span class='button red' DON'T
                     div
                         amp-img src='../img/test.png'
                     h4 箱系
                     div class='simple-box black'
-                    div class='cutin-box orange' 白抜きボックス
+                    div class='cutin-box orange'
+                        |白抜きボックス
                         div.cutin-box-inner
                     div.search-form
-                        div.search-form CeBIT 2019
-                            div.search-btn
-                                span class='fa fa-search fa-fw' 検索
+                        |CeBIT 2019
+                        div.search-btn
+                            span class='fa fa-search fa-fw' 検索
                     h5 埋め込み系
                     p
                         blockquote cite='http://wkwkrnht.wp.xdomain.jp'
