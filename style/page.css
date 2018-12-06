@@ -12,3 +12,8 @@ article {
 .article-main a:focus{
     border-bottom: solid 1px #03a9f4;
 }
+
+.article-main q,
+.article-main blockquote {
+    background-color: #ddd;
+}
