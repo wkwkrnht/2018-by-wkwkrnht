@@ -4,7 +4,7 @@ article {
 }
 
 .article-header {
-    margin: 0 0 4vh;
+    margin: 0 0 calc(var(--vertical-base) * 2);
     width: 100%;
 }
 
@@ -12,12 +12,19 @@ article {
     width: 100vw;
 }
 
+.article-main img {
+    margin: var(--vertical-base) auto;
+}
+
 .article-main a:hover,
 .article-main a:focus{
     border-bottom: solid 1px #03a9f4;
 }
 
+.article-main code,
 .article-main q,
 .article-main blockquote {
     background-color: #ddd;
+    border-radius: 3vmin;
+    padding: 1em;
 }

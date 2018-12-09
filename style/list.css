@@ -1,8 +1,3 @@
-:root{
-    --card-size: 30vmax;
-    --vertical-base: 2vh;
-}
-
 header {
     background-color: #03a9f4;
     color: #fff;
