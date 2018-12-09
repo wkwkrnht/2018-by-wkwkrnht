@@ -1,3 +1,4 @@
+- time = '2018-12-01T00:00:00Z'
 doctype html
 html amp=''
     head
@@ -10,7 +11,7 @@ html amp=''
             |        "@context": "http://schema.org",
             |        "@type": "NewsArticle",
             |        "headline": "Open-source framework for publishing content",
-            |        "datePublished": "2018-12-01T00:00:00Z",
+            |        "datePublished": "#{time}",
             |        "image": [
             |            "logo.png"
             |        ]
@@ -19,13 +20,16 @@ html amp=''
         noscript
             style amp-boilerplate='' body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
         style amp-custom=''
-            = File.read('./style/normalize.css')
-            = File.read('./style/page.css')
+            == File.read('./style/normalize.css')
+            == File.read('./style/general.css')
+            == File.read('./style/page.css')
         body
             article
                 header.article-header
-                    div.logo
+                    div.eyecatch
                         amp-img src='./logo.png' alt='eyecatch' width='4' height='3' layout='responsive'
                     h1 【いつものブログ記事】
+                    time class='updated article-date far fa-calendar-alt' datetime=time
+                        = time
                 main.article-main
                 footer.article-footer

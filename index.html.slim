@@ -19,8 +19,9 @@ html amp=''
         noscript
             style amp-boilerplate='' body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
         style amp-custom=''
-            = File.read('./style/normalize.css')
-            = File.read('./style/list.css')
+            == File.read('./style/normalize.css')
+            == File.read('./style/general.css')
+            == File.read('./style/list.css')
         body
             header
                 div.logo

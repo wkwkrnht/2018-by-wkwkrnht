@@ -6,6 +6,8 @@
 header {
     background-color: #03a9f4;
     color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
     height: 15%;
     margin: 0 0 calc(var(--vertical-base) * 3);
     width: 100%;
