@@ -12,8 +12,14 @@ article {
     width: 100vw;
 }
 
+.article-main .i-amphtml-fill-content {
+    max-height: auto;
+    min-height: auto;
+}
 .article-main img {
+    height: auto;
     margin: var(--vertical-base) auto;
+    max-width: 100%;
 }
 
 .article-main a:hover,
